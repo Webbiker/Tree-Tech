@@ -1,0 +1,31 @@
+@mixin background-gradient {
+	background: linear-gradient(to bottom,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// background: -moz-linear-gradient(top,  rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+	// background: -webkit-linear-gradient(top,  rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin unselectable {
+	user-select: none; -moz-user-select: none; -khtml-user-select: none; -webkit-user-select: none; -o-user-select: none; outline: none;
+}
+
+//add a clearance for floating elements
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+//Set a font-size in rem's and in pixels for older browsers
+@mixin font-size($pxWidth){
+  font-size:$pxWidth;
+  font-size:rem-calc($pxWidth);
+}
+
+//Set a line-height in rem's and in pixels for older browsers
+@mixin line-height($pxWidth){
+  line-height:$pxWidth;
+  line-height:rem-calc($pxWidth);
+}

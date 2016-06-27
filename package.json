@@ -1,0 +1,16 @@
+{
+  "name": "tree-tech",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Tree-Tech Website",
+  "main": "Gruntfile.js",
+  "author": "Joost Brommert, Webbiker",
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-postcss": "^0.8.0"
+  }
+}

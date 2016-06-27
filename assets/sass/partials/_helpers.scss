@@ -1,0 +1,15 @@
+.clear {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+.left {
+  float: left !important;
+}
+
+.right {
+  float: right !important;
+}

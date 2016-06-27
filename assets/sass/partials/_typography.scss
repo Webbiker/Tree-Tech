@@ -1,0 +1,13 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto+Condensed:300,700';
+
+body {
+	font-size: $rem-base;
+	font-family: $font-stack;
+	line-height: $line-height;
+	color: $fontcolor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-stack-title;
+	@include font-size(36px);
+}

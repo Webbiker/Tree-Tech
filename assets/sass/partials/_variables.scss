@@ -1,0 +1,75 @@
+//------------------------------------------------------------------------------
+// font stacks
+//------------------------------------------------------------------------------
+$font-stack:    			'Roboto Condensed', sans-serif;
+$font-stack-title: 		 	Impact, 'Arial Black', sans-serif;
+$rem-base:                	18px !default;
+$normal:					300;
+$bold:						700;
+$line-height: 				1.3;
+
+//------------------------------------------------------------------------------
+//colors
+//------------------------------------------------------------------------------
+$white:    				#FFFFFF;
+$fontcolor:				#3F423A;
+$yellow: 				#FBD249;
+$yellow-dark: 			#F5A623;
+
+//------------------------------------------------------------------------------
+// animation
+//------------------------------------------------------------------------------
+$duration:       200ms;
+$easing:         ease-in;
+
+//------------------------------------------------------------------------------
+//units
+//------------------------------------------------------------------------------
+$box-shadow:			0px 0px 12px 0px rgba(0,0,0,0.25);
+$border-radius:			4px;
+$container-max-width:	1140px;
+
+
+//------------------------------------------------------------------------------
+//media-queries
+//------------------------------------------------------------------------------
+$xxsmall-range: (0px, 360px);
+$xsmall-range: (361px, 640px);
+$small-range: (641px, 720px);
+$medium-range: (721px, 820px);
+$large-range: (821px, 890px);
+$xlarge-range: (891px, 1000px);
+$xxlarge-range: (1001px, 1599999984px);
+
+$screen: "only screen";
+
+$landscape: "#{$screen} and (orientation: landscape)";
+$portrait: "#{$screen} and (orientation: portrait)";
+
+$xxsmall: "#{$screen} and (max-width:#{upper-bound($xxsmall-range)})";
+$xxsmall-up: $screen;
+$xxsmall-only: "#{$screen} and (max-width: #{upper-bound($xxsmall-range)})";
+
+$xsmall: "#{$screen} and (max-width:#{upper-bound($xsmall-range)})";
+$xsmall-up: "#{$screen} and (min-width:#{lower-bound($xsmall-range)})";
+$xsmall-only: "#{$screen} and (min-width:#{lower-bound($xsmall-range)}) and (max-width:#{upper-bound($xsmall-range)})";
+
+$small: "#{$screen} and (max-width:#{upper-bound($small-range)})";
+$small-up: "#{$screen} and (min-width:#{lower-bound($small-range)})";
+$small-only: "#{$screen} and (min-width:#{lower-bound($small-range)}) and (max-width:#{upper-bound($small-range)})";
+
+$medium: "#{$screen} and (max-width:#{upper-bound($medium-range)})";
+$medium-up: "#{$screen} and (min-width:#{lower-bound($medium-range)})";
+$medium-only: "#{$screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+
+$large: "#{$screen} and (max-width:#{upper-bound($large-range)})";
+$large-up: "#{$screen} and (min-width:#{lower-bound($large-range)})";
+$large-only: "#{$screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+
+$xlarge: "#{$screen} and (max-width:#{upper-bound($xlarge-range)})";
+$xlarge-up: "#{$screen} and (min-width:#{lower-bound($xlarge-range)})";
+$xlarge-only: "#{$screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+
+$xxlarge: "#{$screen} and (max-width:#{upper-bound($xxlarge-range)})";
+$xxlarge-up: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
