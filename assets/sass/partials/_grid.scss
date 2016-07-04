@@ -5,25 +5,15 @@
 }
 
 .grid__item {
-	background: linear-gradient(to top, #333, #555);
 	width: 50%;
 	min-height: 480px;
 	box-sizing: border-box;
-}
-
-.grid__header {
-	width: 100%;
 }
 
 .grid__about {
 	background: $white;
 	min-height: 680px;
 	padding: 40px;
-}
-
-
-.grid__avatar {
-	background: linear-gradient(to top, $yellow-dark, $yellow);
 }
 
 .grid__gallery {

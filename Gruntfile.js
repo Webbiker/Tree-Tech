@@ -56,8 +56,26 @@ module.exports = function(grunt) {
         files: ['assets/js/*.js'],
         tasks: ['uglify']
       }
-    }
+    },
 
+    browserSync: {
+        dev: {
+            bsFiles: {
+                src : [
+                    'assets/css/*.css',
+                    'assets/js/*.js',
+                    '**/*.html',
+                    '*.html',
+                    '**/*.php',
+                    '*.php'
+                ]
+            },
+            options: {
+                watchTask: true,
+                proxy: "local.tree-tech.nl"
+            }
+        }
+    }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -65,9 +83,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
-  // Default task(s).
-  grunt.registerTask('default', ['sass', 'postcss', 'uglify']);
-  grunt.registerTask('auto', ['watch']);
-
+  grunt.registerTask('default', ['browserSync', 'watch']);
 };

@@ -21,12 +21,19 @@
         <!-- Add your site or application content here -->
         <div id="page">
             <div class="grid__sizer"></div>
-            <header class="grid__item grid__header">Header</header>
+            <header class="grid__item header">
+                <a class="header__logo" href="/"><svg><use xlink:href="/assets/svg/logo-treetech.svg#logo"></use></svg></a>
+
+                <div class="header__name">
+                    <a href="tel:+31620403332" class="header__call"><svg><use xlink:href="/assets/svg/icons.svg#phone"></use></svg>+31 6 20 40 33 32</a>
+                    Bram van den Boom
+                </div>
+            </header>
             <div class="grid__item grid__about">
                 <h1>Tree-Tech</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem porro asperiores accusamus tempora esse placeat totam officiis debitis aliquid, deleniti amet voluptate consequuntur quibusdam quidem tenetur, iusto inventore. Est repellendus iusto consectetur laboriosam ab necessitatibus ea reiciendis sit aut doloribus maiores, consequatur voluptatibus ut quibusdam distinctio excepturi, fuga commodi omnis!</p>
             </div>
-            <div class="grid__item grid__avatar">Foto Bram</div>
+            <div class="grid__item avatar">Foto Bram</div>
             <div class="grid__item grid__gallery">Foto 1</div>
             <div class="grid__item grid__gallery">Foto 2</div>
             <div class="grid__item grid__gallery">Foto 3</div>

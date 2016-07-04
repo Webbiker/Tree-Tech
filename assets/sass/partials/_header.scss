@@ -1,0 +1,45 @@
+.header {
+	width: 100%;
+	min-height: 560px;
+	background-image: url(/assets/img/header-bground.jpg);
+	background-color: #555;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+}
+
+.header__logo {
+	position: absolute;
+	top: 8px;
+	left: 20px;
+	display: block;
+	svg {	
+		width: 200px;
+		height: auto;
+	}
+}
+
+.header__name {
+	position: absolute;
+	top: 71px;
+	right: 20px;
+	text-align: right;
+	color: $white;
+	font-family: $font-stack-title;
+	@include font-size(36px);
+	text-transform: uppercase;
+
+	a {
+		display: block;
+		color: $white;
+		text-decoration: none;
+		@include font-size(24px);
+	}
+	svg {
+		width: 24px;
+		height: 24px;
+		fill: $white;
+		vertical-align: text-top;
+		margin: 2px 6px 0 0;
+	}
+}
