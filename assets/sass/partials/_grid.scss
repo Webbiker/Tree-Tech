@@ -10,6 +10,21 @@
 	box-sizing: border-box;
 }
 
+.grid--comein {
+	transform: translateY(300px);
+	animation: come-in 1.2s ease forwards 0.5s;
+}
+
+.grid--visible {
+	transform: translateY(0);
+	animation: none;
+
+}
+
+@keyframes come-in {
+	to { transform: translateY(0); }
+}
+
 .grid__about {
 	background: $white;
 	min-height: 680px;

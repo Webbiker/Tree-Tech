@@ -28,6 +28,7 @@
                     <a href="tel:+31620403332" class="header__call"><svg><use xlink:href="/assets/svg/icons.svg#phone"></use></svg>+31 6 20 40 33 32</a>
                     Bram van den Boom
                 </div>
+
             </header>
             <div class="grid__item grid__about">
                 <h1>Tree-Tech</h1>
@@ -41,7 +42,7 @@
             <div class="grid__item grid__gallery">Foto 5</div>
             <div class="grid__item grid__gallery">Foto 6</div>
         </div>
-        <footer>
+        <footer class="footer">
             Footer
         </footer>
 

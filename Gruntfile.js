@@ -10,6 +10,8 @@ module.exports = function(grunt) {
         src: [
           'assets/js/libs/jquery-1.12.0.min.js',
           'assets/js/libs/isotope.pkgd.js',
+          // 'assets/js/libs/jquery.appear.js',
+          // 'assets/js/libs/jquery.easing.1.3.js',
           'assets/js/*.js'
         ],
         dest: 'assets/js/build/app.min.js'
