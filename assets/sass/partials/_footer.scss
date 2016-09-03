@@ -1,3 +1,38 @@
 .footer {
-	min-height: 120px;
+	min-height: 48px;
+	margin: 48px;
+	position: relative;
+
+	p {
+		display: inline-block;
+		@include line-height(48px);
+		margin: 0;
+	}
+}
+
+.footer__social {
+	float: right;
+	li {
+		list-style: none;
+		float: left;
+		margin-left: 10px;
+	}
+
+	a {
+		display: block;
+		width: 48px;
+		height: 48px;
+		background: $grey;
+		transition: background $easing $duration;
+
+		&:hover {
+			background: darken($grey, 20%);
+			transition: background $easing $duration;
+		}
+	}
+
+	svg {
+		width: 24px;
+		height: 24px;
+	}
 }

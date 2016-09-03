@@ -11,3 +11,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack-title;
 	@include font-size(36px);
 }
+
+ul {
+	margin: 0;
+}
+
+.grid__about {
+	p {
+		max-width: 460px;
+		margin: 0 auto 18px auto;
+	}
+}

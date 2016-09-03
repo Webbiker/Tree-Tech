@@ -6,7 +6,6 @@
 
 .grid__item {
 	width: 50%;
-	min-height: 480px;
 	box-sizing: border-box;
 }
 
@@ -28,11 +27,7 @@
 .grid__about {
 	background: $white;
 	min-height: 680px;
-	padding: 40px;
-}
-
-.grid__gallery {
-	background: linear-gradient(to top, #CCC, #EEE);
+	padding: 110px 40px 80px 40px;
 }
 
 @media #{$small} {

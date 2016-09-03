@@ -31,19 +31,66 @@
 
             </header>
             <div class="grid__item grid__about">
-                <h1>Tree-Tech</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem porro asperiores accusamus tempora esse placeat totam officiis debitis aliquid, deleniti amet voluptate consequuntur quibusdam quidem tenetur, iusto inventore. Est repellendus iusto consectetur laboriosam ab necessitatibus ea reiciendis sit aut doloribus maiores, consequatur voluptatibus ut quibusdam distinctio excepturi, fuga commodi omnis!</p>
+                <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin sollicitudin enim, in luctus turpis consequat ut. Mauris aliquam libero ac pulvinar eleifend. Vestibulum eget rutrum purus. In sed facilisis dolor. Donec scelerisque, lacus nec rutrum ultrices, nulla arcu molestie ipsum, sit amet tempus massa dui a enim.</p>
+                <p>Duis semper luctus justo, a convallis sem. Duis semper efficitur ipsum, vel efficitur massa congue in. In eu rhoncus urna, nec consectetur sem. Aliquam erat volutpat. Nam eget mi sed risus rhoncus venenatis nec sed libero. Fusce lectus erat, condimentum eget neque semper, dapibus tincidunt sapien. Curabitur venenatis gravida fermentum. Nullam laoreet lectus et lorem elementum, ac scelerisque magna interdum. Aenean a dictum ligula.</p>
+                <p>Nulla sapien lorem, viverra eget mi vel, maximus sodales ex. Quisque viverra feugiat metus, sed placerat enim rutrum vulputate. Phasellus imperdiet enim sed metus finibus, ut pretium nulla cursus. Donec consectetur dignissim purus, vel maximus nunc pulvinar eu. Nunc tellus neque, vulputate sit amet interdum sit amet, pellentesque a orci. Duis aliquam lacinia augue sed aliquam. Ut vulputate tortor a sodales sagittis.</p>
+                <p class="text-center"><a href="javascript:;" class="button button--primary">Neem contact op <svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
             </div>
-            <div class="grid__item avatar">Foto Bram</div>
-            <div class="grid__item grid__gallery">Foto 1</div>
-            <div class="grid__item grid__gallery">Foto 2</div>
-            <div class="grid__item grid__gallery">Foto 3</div>
-            <div class="grid__item grid__gallery">Foto 4</div>
-            <div class="grid__item grid__gallery">Foto 5</div>
-            <div class="grid__item grid__gallery">Foto 6</div>
+            <div class="grid__item avatar">
+                <img src="/assets/img/avatar-groot.png" alt="Bram van den Boom">
+            </div>
+            <div class="grid__item grid__gallery">
+                <a class="gallery" href="javascript:;">
+                    <span class="gallery__title">Bijzettafel</span>
+                    <svg class="gallery__zoom"><use xlink:href="/assets/svg/icons.svg#search"></use></svg>                
+                    <img class="gallery__img" src="/media/portfolio/treetech-8.jpg">
+                </a>
+            </div>
+            <div class="grid__item grid__gallery">
+                <a class="gallery" href="javascript:;">
+                    <span class="gallery__title">Lavalamp</span>
+                    <svg class="gallery__zoom"><use xlink:href="/assets/svg/icons.svg#search"></use></svg>                
+                    <img class="gallery__img" src="/media/portfolio/treetech-2.jpg">
+                </a>
+            </div>
+            <div class="grid__item grid__gallery">
+                <a class="gallery" href="javascript:;">
+                    <span class="gallery__title">Animal art</span>
+                    <svg class="gallery__zoom"><use xlink:href="/assets/svg/icons.svg#search"></use></svg>                
+                    <img class="gallery__img" src="/media/portfolio/treetech-6.jpg">
+                </a>
+            </div>
+            <div class="grid__item grid__gallery">
+                <a class="gallery" href="javascript:;">
+                    <span class="gallery__title">BBQ kar</span>
+                    <svg class="gallery__zoom"><use xlink:href="/assets/svg/icons.svg#search"></use></svg>                
+                    <img class="gallery__img" src="/media/portfolio/treetech-9.jpg">
+                </a>
+            </div>
+            <div class="grid__item grid__gallery">
+                <a class="gallery" href="javascript:;">
+                    <span class="gallery__title">Borrelboom</span>
+                    <svg class="gallery__zoom"><use xlink:href="/assets/svg/icons.svg#search"></use></svg>                
+                    <img class="gallery__img" src="/media/portfolio/treetech-3.jpg">
+                </a>
+            </div>
+            <div class="grid__item grid__gallery">
+                <a class="gallery" href="javascript:;">
+                    <span class="gallery__title">Hangtafel</span>
+                    <svg class="gallery__zoom"><use xlink:href="/assets/svg/icons.svg#search"></use></svg>                
+                    <img class="gallery__img" src="/media/portfolio/treetech-1.jpg">
+                </a>
+            </div>
         </div>
         <footer class="footer">
-            Footer
+            <p>&copy;Tree-Tech 2016</p>
+            <a href="javascript:;" class="button button--primary button--rounded button--up" id="backtotop"><svg><use xlink:href="/assets/svg/icons.svg#caret-up"></use></svg></a>
+            <ul class="footer__social">
+                <li><a href="javascript;;" class="button button--secondary button--rounded"><svg><use xlink:href="/assets/svg/icons.svg#phone"></use></svg></a></li>
+                <li><a href="javascript;;" class="button button--secondary button--rounded"><svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></li>
+                <li><a href="javascript;;" class="button button--secondary button--rounded"><svg><use xlink:href="/assets/svg/icons.svg#facebook"></use></svg></a></li>
+                <li><a href="javascript;;" class="button button--secondary button--rounded"><svg><use xlink:href="/assets/svg/icons.svg#linkedin"></use></svg></a></li>
+            </ul>
         </footer>
 
 

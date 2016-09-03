@@ -1,0 +1,77 @@
+.button {
+	border-radius: $border-radius;
+	text-decoration: none;
+	font-family: $font-stack-title;
+	@include font-size(24px);
+	line-height: 1;
+	display: inline-block;
+	padding: 10px 24px;
+	text-transform: uppercase;
+
+	svg {
+		width: 24px;
+		height: 24px;
+		fill: $white;
+		vertical-align: text-bottom;
+		margin-left: 16px;
+	}
+
+}
+
+.button--primary {
+	background: linear-gradient($green-light 0%, $green 50%, $green 100%);
+	background-size: 100% 100px;
+	background-position: 0 0%;
+	transition: background-position $duration $easing;
+	color: $white;
+	border: 1px solid $green;
+
+	&:hover {
+		background-position: 0 100%;
+		transition: background-position $duration $easing;
+	}
+}
+
+.button--secondary {
+	background: $grey;
+	transition: background $duration $easing;
+	color: $fontcolor;
+
+	svg {
+		fill: $fontcolor;
+	}
+
+	&:hover {
+		background: darken($grey, 20%);
+		transition: background $duration $easing;
+	}
+	
+}
+
+.button--rounded {
+	padding: 0;
+	border-radius: 50%;
+	width: 48px;
+	height: 48px;
+	text-align: center;
+
+	svg {
+		margin: 12px 0 0 0;
+		width: 36px;
+		height: 36px;
+	}
+
+}
+
+.button--up {
+	position: absolute;
+	left: 50%;
+	margin-left: -21px;
+
+	svg {
+		margin-top: 0;
+		width: 42px;
+		height: 42px;
+	}
+
+}

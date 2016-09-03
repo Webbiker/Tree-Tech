@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="37px" height="110px" viewBox="0 0 37 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>bracket-right</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-178.000000, -625.000000)" fill="#F6A623">
+            <g id="About" transform="translate(0.000000, 560.000000)">
+                <g id="first-letter-caption" transform="translate(105.000000, 65.000000)">
+                    <g id="Brackets">
+                        <path d="M73.2617188,0 L73.2617188,15.1875 L94.8125,15.1875 L94.8125,94.8125 L73.2617188,94.8125 L73.2617188,110 L99.2578125,110 C105.166016,110 110,105.166016 110,99.2578125 L110,10.7421875 C110,4.83398438 105.166016,0 99.2578125,0 L73.2617188,0 Z" id="bracket-right"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

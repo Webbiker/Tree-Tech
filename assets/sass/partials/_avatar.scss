@@ -4,4 +4,34 @@
 	background-repeat: none;
 	background-position: bottom center;
 	background-size: cover;
+	position: relative;
+	min-height: 480px;
+
+	img {
+		position: absolute;
+		bottom: 5%;
+	    left: 7%;
+	    z-index: 10;
+	    max-height: 920px;
+	    width: auto;
+	    height: 200%;
+	}
+
+
+}
+
+@media #{$xlarge} {
+	.avatar {
+		img {
+		    max-height: 850px;
+		}
+	}
+}
+
+@media #{$small} {
+	.avatar {
+		img {
+
+		}
+	}
 }

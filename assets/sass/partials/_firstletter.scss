@@ -1,0 +1,34 @@
+.fchar {
+
+		display: block; 
+		width: 110px;
+		height: 110px;
+		margin: -45px 20px 0px -35px;
+		float: left;
+		text-align: center;
+
+
+		@include font-size(72px);
+		@include line-height(120px);
+		font-family: $font-stack-title;
+		position: relative;
+}
+
+.fchar__bleft,
+.fchar__bright {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 37px;
+	height: 108px;
+}
+
+.fchar__bleft {
+	background: url(/assets/svg/bracket-left.svg) no-repeat center left;
+	left: 0;
+}
+
+.fchar__bright {
+	background: url(/assets/svg/bracket-right.svg) no-repeat center right;
+	right: 0;
+}
