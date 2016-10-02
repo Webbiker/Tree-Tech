@@ -32,3 +32,33 @@
 	background: url(/assets/svg/bracket-right.svg) no-repeat center right;
 	right: 0;
 }
+
+@media #{$medium}{
+	.fchar {
+		width: 60px;
+		height: 60px;
+		margin: 4px 14px 0px 0px;
+
+		@include font-size(36px);
+		@include line-height(72px);
+	}
+
+	.fchar__bleft,
+	.fchar__bright {
+		// width: 37px;
+		height: 60px;
+	}
+
+	.fchar__bleft {
+		background: url(/assets/svg/bracket-left.svg) no-repeat center left;
+		background-size: 20px 60px;
+		left: 0;
+	}
+
+	.fchar__bright {
+		background: url(/assets/svg/bracket-right.svg) no-repeat center right;
+		background-size: 20px 60px;
+		right: 0;
+	}
+
+}

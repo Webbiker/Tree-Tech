@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 
     watch: {
       options: {
-        livereload: true                  // Set to false if you don't have the LiveReload extension/plugin for your browser
+        livereload: false                  // Set to false if you don't have the LiveReload extension/plugin for your browser
       },
       html: {
         files: ['*.html', '*.php']

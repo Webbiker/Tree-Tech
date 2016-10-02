@@ -36,3 +36,29 @@
 		height: 24px;
 	}
 }
+
+@media #{$medium} {
+	.footer {
+		display: flex;
+		flex-direction: column;
+		margin: 20px 10px;
+
+		p {
+			text-align: center;
+			order: 3;
+		}
+
+		.button--up {
+			position: static;
+			margin: 0 auto 40px auto;
+			order: 1;
+		}
+	}
+
+	.footer__social {
+		padding: 0;
+		float: none;
+		margin: 0 auto;
+		order: 2;
+	}
+}

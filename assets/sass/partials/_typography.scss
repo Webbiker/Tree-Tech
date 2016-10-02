@@ -3,13 +3,19 @@
 body {
 	font-size: $rem-base;
 	font-family: $font-stack;
-	line-height: $line-height;
 	color: $fontcolor;
+	line-height: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $font-stack-title;
 	@include font-size(36px);
+	text-transform: uppercase;
+	line-height: $line-height;
+}
+
+h1, h2, h3, h4, h5, h6, ul, p {
+	line-height: $line-height;
 }
 
 ul {

@@ -9,15 +9,17 @@
 
 	&:hover {
 		.gallery__img {
-			transition: width $easing $duration*2;
-			width: 105%;
+			transition: all $easing $duration*2;
+			width: 106%;
+			transform: translateY(-3%) translateX(-3%);
 			height: auto;
 		}
 	}
 }
 
 .gallery__img {
-	transition: width $easing $duration;
+	transition: all $easing $duration;
+	transform: translateY(0) translateX(0);
 	width: 100%;
 	height: auto;
 }
@@ -26,6 +28,7 @@
 	position: absolute;
 	bottom: 10px;
 	left: 10px;
+	z-index: 10;
 
 	fill: $white;
 	width: 30px;
@@ -36,6 +39,8 @@
 	position: absolute;
 	bottom: 10px;
 	right: 10px;
+	z-index: 10;
+
 	color: $white;
 	@include line-height(18px);
 	@include font-size(18px);

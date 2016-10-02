@@ -66,6 +66,42 @@ $( document ).ready(function() {
 		return false;
   	});
 
+
+	//show modal
+	$(document).on('click', '[data-modal]', function(){
+		var modal = $(this).data('modal');
+		console.log(modal);
+		$('#'+modal)
+			.addClass('modal--active animated fadeIn')
+			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				$(this)
+					.find('.modal__container')
+					.addClass('modal__container--active animated fadeInDown')
+					.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+						$(this)
+							.removeClass('animated fadeInDown')
+							.closest('.modal')
+							.removeClass('animated fadeIn');
+					});
+			});
+	})
+
+	//close the modal
+	$(document).on('click', '.modal__close', function(){
+		$(this)
+			.closest('.modal')
+			.addClass('animated fadeOut')
+			.find('.modal__container')
+			.addClass('animated fadeOutUp')
+			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+				$(this)
+					.removeClass('animated fadeOutUp modal__container--active')
+					.closest('.modal')
+					.removeClass('animated fadeOut modal--active');
+
+			});
+	});
+
 });
 
 $( window ).resize(onArrange);
