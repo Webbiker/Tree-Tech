@@ -70,7 +70,7 @@ $( document ).ready(function() {
 	//show modal
 	$(document).on('click', '[data-modal]', function(){
 		var modal = $(this).data('modal');
-		console.log(modal);
+
 		$('#'+modal)
 			.addClass('modal--active animated fadeIn')
 			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){

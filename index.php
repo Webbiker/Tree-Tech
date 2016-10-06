@@ -34,7 +34,7 @@
                 <p>Morem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin sollicitudin enim, in luctus turpis consequat ut. Mauris aliquam libero ac pulvinar eleifend. Vestibulum eget rutrum purus. In sed facilisis dolor. Donec scelerisque, lacus nec rutrum ultrices, nulla arcu molestie ipsum, sit amet tempus massa dui a enim.</p>
                 <p>Duis semper luctus justo, a convallis sem. Duis semper efficitur ipsum, vel efficitur massa congue in. In eu rhoncus urna, nec consectetur sem. Aliquam erat volutpat. Nam eget mi sed risus rhoncus venenatis nec sed libero. Fusce lectus erat, condimentum eget neque semper, dapibus tincidunt sapien. Curabitur venenatis gravida fermentum. Nullam laoreet lectus et lorem elementum, ac scelerisque magna interdum. Aenean a dictum ligula.</p>
                 <p>Nulla sapien lorem, viverra eget mi vel, maximus sodales ex. Quisque viverra feugiat metus, sed placerat enim rutrum vulputate. Phasellus imperdiet enim sed metus finibus, ut pretium nulla cursus. Donec consectetur dignissim purus, vel maximus nunc pulvinar eu. Nunc tellus neque, vulputate sit amet interdum sit amet, pellentesque a orci. Duis aliquam lacinia augue sed aliquam. Ut vulputate tortor a sodales sagittis.</p>
-                <p class="text-center"><a href="javascript:;" class="button button--primary">Neem contact op <svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                <p class="text-center"><a href="javascript:;" class="button button--primary" data-modal="contact">Neem contact op <svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
             </article>
             <section class="grid__item avatar">
                 <img src="/assets/img/avatar-groot.png" alt="Bram van den Boom">
@@ -123,7 +123,7 @@
                             </div>
                             <div class="modal__footer">
                                 <p>
-                                    <a href="javascript:;" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                                    <a href="javascript:;" data-modal="contact" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
                             </div>
                         </div>
                     </div>
@@ -151,7 +151,7 @@
                         <div class="modal__content"> 
                             <h1 class="modal__title">
                                 Lavalamp
-                                <a href="javascript:;" class="modal__close"><svg><use xlink:href="/assets/svg/icons.svg#times-circle"></use></svg></a>
+                                <a href="javascript:;" data-modal="contact" class="modal__close"><svg><use xlink:href="/assets/svg/icons.svg#times-circle"></use></svg></a>
                             </h1>
                             <div class="modal__body">
                                 <p>Vivamus condimentum accumsan purus, at blandit felis laoreet eu. Nullam nec leo eget nisi scelerisque convallis.</p>
@@ -161,7 +161,7 @@
                             </div>
                             <div class="modal__footer">
                                 <p>
-                                    <a href="javascript:;" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                                    <a href="javascript:;" data-modal="contact" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
                             </div>
                         </div>
                     </div>
@@ -199,7 +199,7 @@
                             </div>
                             <div class="modal__footer">
                                 <p>
-                                    <a href="javascript:;" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                                    <a href="javascript:;" data-modal="contact" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
                             </div>
                         </div>
                     </div>
@@ -237,7 +237,7 @@
                             </div>
                             <div class="modal__footer">
                                 <p>
-                                    <a href="javascript:;" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                                    <a href="javascript:;" data-modal="contact" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
                             </div>
                         </div>
                     </div>
@@ -275,7 +275,7 @@
                             </div>
                             <div class="modal__footer">
                                 <p>
-                                    <a href="javascript:;" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                                    <a href="javascript:;" data-modal="contact" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
                             </div>
                         </div>
                     </div>
@@ -313,7 +313,48 @@
                             </div>
                             <div class="modal__footer">
                                 <p>
-                                    <a href="javascript:;" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                                    <a href="javascript:;" data-modal="contact" class="button button--primary button--small">Interesse in dit product?<svg><use xlink:href="/assets/svg/icons.svg#envelope"></use></svg></a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="overlay" class="modal__overlay"></div>
+        </div>
+
+        <div class="modal modal--contact" id="contact">
+            <div class="modal__container">
+                <div class="modal__wrapper">
+                    <div class="modal__info">
+                        <div class="modal__content"> 
+                            <h1 class="modal__title">
+                                Contact
+                                <a href="javascript:;" class="modal__close"><svg><use xlink:href="/assets/svg/icons.svg#times-circle"></use></svg></a>
+                                <div class="modal__avatar" style="background-image:url(/assets/img/avatar-klein.png);"></div>
+                            </h1>
+                            <div class="modal__body modal__body--left">
+                                <p>Vivamus condimentum accumsan purus, at blandit felis laoreet eu. Nullam nec leo eget nisi scelerisque convallis.</p>
+                                <p>Nunc mollis semper diam auctor ultricies. Suspendisse gravida tempus quam, sit amet rhoncus magna vulputate id.</p>
+                                <p><strong><svg><use xlink:href="/assets/svg/icons.svg#phone"></use></svg>+31 6 20 40 33 32</strong></p>
+                            </div>
+                            <div class="modal__body modal__body--right">
+                                <form action="" method="POST" id="contactForm" name="contactForm" class="form">
+                                    <div class="form__row">
+                                        <label for="name">Uw naam:</label>
+                                        <input type="text" name="name" id="name" value="Theo Jansen">
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="email">Uw E-mailadres:</label>
+                                        <input type="email" name="email" id="email" value="tjanssen@ziggo.nl">
+                                    </div>
+                                    <div class="form__row">
+                                        <label for="message">Uw bericht:</label>
+                                        <textarea name="message" rows="6" id="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia placeat tenetur unde sequi iusto, voluptas.</textarea>
+                                    </div>
+                                    <div class="form__row">
+                                        <button type="submit" class="button button--primary button--small">Verzend</button>
+                                    </div>
+                                </form>
                             </div>
                         </div>
                     </div>

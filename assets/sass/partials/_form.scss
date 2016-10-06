@@ -1,0 +1,24 @@
+.form {
+	
+}
+
+.form__row {
+	line-height: $line-height;
+	margin-bottom: 20px;
+
+	label {
+		font-weight: $bold;
+		display: block;
+	}
+}
+
+input,
+textarea {
+	border: 1px solid $green;
+	width: 100%;
+	display: block;
+	border-radius: $border-radius;
+	font-family: $font-stack;
+	color: $green;
+	padding: 5px;
+}
