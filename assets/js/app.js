@@ -66,45 +66,67 @@ $( document ).ready(function() {
 		return false;
   	});
 
-
 	//show modal
 	$(document).on('click', '[data-modal]', function(){
 		var modal = $(this).data('modal');
+		var activeModal = $('.modal--active').length;
+		var activeModalId = $('.modal--active').prop('id');
 
-		$('#'+modal)
-			.addClass('modal--active animated fadeIn')
-			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-				$(this)
-					.find('.modal__container')
-					.addClass('modal__container--active animated fadeInDown')
-					.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-						$(this)
-							.removeClass('animated fadeInDown')
-							.closest('.modal')
-							.removeClass('animated fadeIn');
-					});
-			});
+
+		if (modal == 'contact' && activeModal == 1 ){
+			hideModal('#'+activeModalId);
+			setTimeout(
+				function(){ 
+					showModal(modal);
+				 }, 100);
+		} else {
+			showModal(modal);
+
+		}
 	})
 
 	//close the modal
 	$(document).on('click', '.modal__close', function(){
-		$(this)
-			.closest('.modal')
-			.addClass('animated fadeOut')
-			.find('.modal__container')
-			.addClass('animated fadeOutUp')
-			.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
-				$(this)
-					.removeClass('animated fadeOutUp modal__container--active')
-					.closest('.modal')
-					.removeClass('animated fadeOut modal--active');
-
-			});
+		hideModal(this);
 	});
 
 });
 
 $( window ).resize(onArrange);
+
+
+var showModal = function(elem){
+	$('#'+elem)
+		.addClass('modal--active animated fadeIn')
+		.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			$(this)
+				.find('.modal__container')
+				.addClass('modal__container--active animated fadeInDown')
+				.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+					$(this)
+						.removeClass('animated fadeInDown')
+						.closest('.modal')
+						.removeClass('animated fadeIn');
+				});
+		});
+	
+}
+
+var hideModal = function(elem){
+	$(elem)
+		.closest('.modal')
+		.addClass('animated fadeOut')
+		.find('.modal__container')
+		.addClass('animated fadeOutUp')
+		.one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
+			$(this)
+				.removeClass('animated fadeOutUp modal__container--active')
+				.closest('.modal')
+				.removeClass('animated fadeOut modal--active');
+
+		});
+	
+}
 
 var onArrange = function() {
 	$('.grid__item').each(function(){

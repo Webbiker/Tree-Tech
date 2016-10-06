@@ -151,7 +151,7 @@
                         <div class="modal__content"> 
                             <h1 class="modal__title">
                                 Lavalamp
-                                <a href="javascript:;" data-modal="contact" class="modal__close"><svg><use xlink:href="/assets/svg/icons.svg#times-circle"></use></svg></a>
+                                <a href="javascript:;" class="modal__close"><svg><use xlink:href="/assets/svg/icons.svg#times-circle"></use></svg></a>
                             </h1>
                             <div class="modal__body">
                                 <p>Vivamus condimentum accumsan purus, at blandit felis laoreet eu. Nullam nec leo eget nisi scelerisque convallis.</p>
